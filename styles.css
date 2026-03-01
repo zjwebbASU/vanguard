@@ -1,7 +1,6 @@
-/* CSS BY YOUR NAME */
+/* CSS BY ZAC WEBB */
 
 /* IMPORTED FONTS*/
-/* IMPORT "INTER" FROM GOOGLE FONTS"*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* CSS RESET */
@@ -65,8 +64,84 @@ table {
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
+body{
+    font-family: var(--font);
+}
+
 #logo {
     width: 50px;
+}
+
+header{
+    background-color: var(--black);
+    color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-weight: 800;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px var(--blue);
+    position: relative;
+    z-index: 5;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown h2{
+    padding: 10px;
+}
+
+.dropdown h2:hover{
+    cursor: pointer;
+    color: var(--black);
+    background-color: var(--blue);
+}
+
+.hero-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/vanguard-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--white);
+    text-align: center;
+    width: 85%;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+}
+
+.blur h2{
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.blur p{
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.blur a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.25rem;
+    background-color: var(--blue);
+    padding: 18px;
+    border-radius: 6px;
 }
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
