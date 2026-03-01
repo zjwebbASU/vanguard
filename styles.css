@@ -144,7 +144,7 @@ header{
     border-radius: 6px;
 }
 
-.expertise, .cards, .results{
+.expertise, .cards, .results, .form{
     width: 90%;
     margin: auto;
 }
@@ -153,7 +153,7 @@ header{
     margin: 40px auto;
 }
 
-.expertise h2, .results h2, .results h3{
+.expertise h2, .results h2, .results h3, .form h2{
     font-size: 1.75rem;
     font-weight: 700;
     margin-left: 10px;
@@ -227,7 +227,68 @@ header{
     background-color: var(--charcoal);
 }
 
+.form-container, footer{
+    background-color: var(--black);
+}
 
+.form, footer{
+    color: var(--white);
+}
+
+.form{
+    padding: 30px;
+}
+
+.form p{
+    margin: 18px 0;
+    line-height: 24px;
+}
+
+.form label, .form p{
+    font-size: 0.9rem;
+}
+
+form button{
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: var(white);
+}
+
+form input, form textarea{
+    margin-bottom: 20px;
+    border: 2px solid var(--blue);
+}
+
+form input{
+    height: 40px;
+}
+
+form textarea{
+    height: 100px;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+footer a{
+    color: var(--blue);
+}
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
